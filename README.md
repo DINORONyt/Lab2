@@ -82,20 +82,6 @@ dotnet run --project WinFormsApp1
 - Вывод сообщений об ошибках через MessageBox с иконкой предупреждения
 - Методы валидации вынесены в TaskSolver для предотвращения дублирования кода
 
-### Запуск тестов
-
-```bash
-dotnet test Lab02Variant17.Tests
-```
-
-### Покрытие кода
-
-Для генерации отчёта о покрытии:
-```bash
-dotnet test /p:CollectCoverage=true
-reportgenerator -reports:"./TestResults/coverage.xml" -targetdir:"./CoverageReport" -reporttypes:Html
-```
-
 ### Структура проекта
 ```
 Lab02_Variant17/
