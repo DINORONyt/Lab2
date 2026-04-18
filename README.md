@@ -43,36 +43,69 @@ dotnet run --project WinFormsApp1
 ### Через HTTPS
 
 ```bash
-git clone https://github.com/ваш-username/Lab03Variant17.git
-cd Lab03Variant17
+git clone https://github.com/DINORONyt/Monte-Carlo-method.git
+cd Monte-Carlo-method
 ```
 
 ### Через SSH
 
 ```bash
-git clone git@github.com:ваш-username/Lab03Variant17.git
-cd Lab03Variant17
+git clone git@github.com:DINORONyt/Monte-Carlo-method.git
+cd Monte-Carlo-method
 ```
 
 ### Через GitHub Desktop
 
-1. Откройте GitHub Desktop
+1. Откройте **GitHub Desktop**
 2. Выберите **File** → **Clone Repository**
-3. Вставьте URL репозитория: `https://github.com/ваш-username/Lab03Variant17.git`
-4. Выберите локальный путь для клонирования
+3. В поле **URL or username/repo** вставьте:
+   ```
+   https://github.com/DINORONyt/Monte-Carlo-method
+   ```
+4. Выберите локальный путь для клонирования в поле **Local Path**
 5. Нажмите кнопку **Clone**
 
-### Через Visual Studio
+### Через Visual Studio 2022
 
 1. Откройте Visual Studio
-2. Выберите **Get Code** → **Clone a repository**
-3. Вставьте URL репозитория
-4. Укажите путь сохранения
+2. На стартовом окне выберите **Clone a repository**
+3. В поле **Repository location** вставьте URL:
+   ```
+   https://github.com/DINORONyt/Monte-Carlo-method
+   ```
+4. Укажите путь сохранения в поле **Path**
 5. Нажмите **Clone**
 
----
+### Через командную строку (пошагово)
 
-**Примечание:** Замените `ваш-username` на ваш актуальный username на GitHub.
+```bash
+# 1. Перейдите в папку, где хотите разместить проект
+cd C:\Users\ВашеИмя\Documents\Projects
+
+# 2. Клонируйте репозиторий
+git clone https://github.com/DINORONyt/Monte-Carlo-method.git
+
+# 3. Перейдите в папку проекта
+cd Monte-Carlo-method
+
+# 4. Откройте решение в Visual Studio
+start Lab02Variant17.sln
+```
+
+### После клонирования
+
+```bash
+# Восстановите зависимости проекта
+dotnet restore
+
+# Соберите решение
+dotnet build
+
+# Запустите приложение
+dotnet run --project WinFormsApp1
+```
+
+> **Примечание:** Убедитесь, что у вас установлен [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) и Visual Studio 2022 с компонентом **.NET desktop development**.
 ### Использование приложения
 
 При запуске открывается окно с тремя вкладками:
